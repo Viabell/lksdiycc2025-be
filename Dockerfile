@@ -20,6 +20,19 @@ FROM alpine:latest
 
 WORKDIR /root/
 
+ENV DB_HOST="" \ 
+    DB_PORT="" \
+    DB_USER="" \ 
+    DB_PASS="" \
+    DB_NAME="" \
+    REDIS_ADDR="" \ 
+    REDIS_TLS_INSECURE="" \
+    AWS_REGION="" \ 
+    AWS_ACCESS_KEY="" \
+    AWS_SECRET_KEY="" \ 
+    AWS_SESSION_TOKEN="" \
+    AWS_BUCKET_NAME=""
+
 # Install dependencies (optional but useful)
 RUN apk add --no-cache ca-certificates
 
